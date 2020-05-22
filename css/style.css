@@ -1,0 +1,125 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+   html {
+    height: 100%;
+}
+
+html,
+body {
+    min-height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em; 
+    background-color: #cccccc;
+    padding:  0 30px;
+}
+
+a {
+    display: flex; 
+    color: #111; 
+}
+a:hover{
+    text-decoration: none; 
+}
+a:active{
+    text-decoration: none; 
+    color: #0073aa;
+}
+header {
+    padding: 2em 2em 2em 0;
+    font-size: 25px;
+}
+p{
+    padding: 5px;
+}
+.first_paragraph::first-letter{
+ font-size: 200%;
+}
+.text {
+    width: auto;
+    background-color: #ffffff;
+    padding: 25px 15px;
+    text-align: justify;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 25px;
+}
+
+.Challenge_me_code{
+    position: relative;
+    z-index: 3;
+    background-color: #e5e5e5;
+    display: flex;
+    padding:0 0 0 10px;
+    width: auto;
+   
+}
+.Challenge_me_code_border{
+    z-index: 4;
+    border-radius: 10px;
+    padding: 5px 13px 13px 13px;
+    background-color: #e5e5e5;
+    position: absolute;
+    width:15%;
+    right:0;
+    top:-25px;
+    text-align: center;
+}
+
+.Challenge_me_sourse{
+    margin: 0 0 50px 0;
+}
+.Challenge_me_articles_title{
+    justify-content: center;
+    font-size: 125%;
+    margin-top: 10px;
+}
+.Challenge_me_articles{
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    background-color: #e5e5e5;
+    position: relative;
+    margin: 0 0 80px 0;
+}
+.Challenge_me_articles_useful{
+    border-radius: 10px;
+    padding: 5px 13px 13px 13px;
+    background-color: #e5e5e5;
+    position: absolute;
+    width:25%;
+    right:0;
+    top:-30px;
+    text-align: center;
+
+}
+.Challenge_me_articles_autor{
+    text-align: right;
+}
+.Challenge_me_other_articles{
+    z-index: 5;
+    width: 45%;
+    padding:25px;
+    background-color: #e5e5e5;
+    position: relative;
+    margin-bottom: 50px;
+}
+.Challenge_me_other_articles_border{
+    z-index: 6;
+    border-radius: 10px;
+    padding: 5px 13px 13px 13px;
+    background-color: #e5e5e5;
+    position: absolute;
+    width:50%;
+    right:0;
+    top:-30px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
