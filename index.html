@@ -23,9 +23,7 @@
                 Для удаления файла  из истории  (всех коммитов от первого и до крайнего) необходимо выполнить команду:
             </p>        
                 <div  class="Challenge_me_code">
-                    <div class="Challenge_me_code_border">
-                        < Code >
-                    </div>
+                    
     <pre>
     <code>
 git filter-branch --tree-filter 'rm -f file-name’ HEAD
@@ -36,9 +34,7 @@ git filter-branch --tree-filter 'rm -f file-name’ HEAD
     Опция <i>--tree-filter</i> запускает указанную команду (<i>rm -f file-name</i>) для каждого коммита в истории, после чего сохраняет результат выполнения. В этом случае команда <i>filter-branch</i> отредактирует каждый коммит, в котором "засветился" искомый файл (от коммита в котором был создан и до крайнего, на который указывает <i>.HEAD</i>).
     Если вы знаете коммит, в котором был создан не желаемый файл, вы можете ускорить процесс, указав <i>.Git</i> промежуток истории нуждающийся в редактировании. Для этого необходимо заменить опцию <i>HEAD</i> на <i>35dsa2..HEAD</i>, где <i>35dsa2</i> - коммит предшествующий тому, в котором был создан файл.   
     <div  class="Challenge_me_code">
-        <div class="Challenge_me_code_border">
-            < Code >
-        </div>
+       
 <pre>
     <code>
 git filter-branch --tree-filter 'rm -f file-name’ 35dsa2..HEAD
@@ -50,22 +46,9 @@ git filter-branch --tree-filter 'rm -f file-name’ 35dsa2..HEAD
 </p>
 
       
-        <div class="Challenge_me_sourse">
-    <a href="https://git-scm.com/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A3%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Дополнительная информация</a>
-            </div>
             <div class="flex">
-            <div class="Challenge_me_articles">
-                <div class='Challenge_me_articles_useful'>
-                    < Полезности >
-                </div>
-                <a class='Challenge_me_articles_title' href="https://manishearth.github.io/blog/2017/03/05/understanding-git-filter-branch/">Understanding Git Filter-branch and the Git Storage Model</a>
-
-                <p class="Challenge_me_articles_autor">Manish Goregaokar, research engineer at Mozilla</p>
-                </div>
                 <div class="Challenge_me_other_articles">
-                    <div class="Challenge_me_other_articles_border">
-                < Другие статьи по теме >
-                    </div>  
+                  
                     <ul>
                         <li>
                         <a href="https://git-scm.com/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A3%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Как можно откатить изменения к последнему коммиту (вернуть репозиторий Git к предыдущему коммиту)

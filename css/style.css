@@ -34,38 +34,27 @@ header {
 p{
     padding: 5px;
 }
-.first_paragraph::first-letter{
- font-size: 200%;
-}
+
 .text {
     width: auto;
     background-color: #ffffff;
     padding: 25px 15px;
     text-align: justify;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
-    border-radius: 25px;
 }
 
 .Challenge_me_code{
     position: relative;
     z-index: 3;
-    background-color: #e5e5e5;
+    background-color: #212121;
     display: flex;
     padding:0 0 0 10px;
     width: auto;
+    color: #ffff00;
+    border-left:5px solid #ffff00;
    
 }
-.Challenge_me_code_border{
-    z-index: 4;
-    border-radius: 10px;
-    padding: 5px 13px 13px 13px;
-    background-color: #e5e5e5;
-    position: absolute;
-    width:15%;
-    right:0;
-    top:-25px;
-    text-align: center;
-}
+
 
 .Challenge_me_sourse{
     margin: 0 0 50px 0;
@@ -85,7 +74,6 @@ p{
     margin: 0 0 80px 0;
 }
 .Challenge_me_articles_useful{
-    border-radius: 10px;
     padding: 5px 13px 13px 13px;
     background-color: #e5e5e5;
     position: absolute;
@@ -106,17 +94,7 @@ p{
     position: relative;
     margin-bottom: 50px;
 }
-.Challenge_me_other_articles_border{
-    z-index: 6;
-    border-radius: 10px;
-    padding: 5px 13px 13px 13px;
-    background-color: #e5e5e5;
-    position: absolute;
-    width:50%;
-    right:0;
-    top:-30px;
-    text-align: center;
-}
+
 .flex{
     display: flex;
     flex-direction: row;
