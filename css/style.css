@@ -40,12 +40,11 @@ p{
     background-color: #ffffff;
     padding: 25px 15px;
     text-align: justify;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
 }
 
 .Challenge_me_code{
     position: relative;
-    z-index: 3;
     background-color: #212121;
     display: flex;
     padding:0 0 0 10px;
@@ -87,7 +86,6 @@ p{
     text-align: right;
 }
 .Challenge_me_other_articles{
-    z-index: 5;
     width: 45%;
     padding:25px;
     background-color: #e5e5e5;
