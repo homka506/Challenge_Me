@@ -63,39 +63,39 @@ p{
     font-size: 125%;
     margin-top: 10px;
 }
-.Challenge_me_articles{
-    width: 45%;
-    align-items: center;
-    justify-content: center;
-    padding:10px;
-    background-color: #e5e5e5;
-    position: relative;
-    margin: 0 0 80px 0;
-}
-.Challenge_me_articles_useful{
-    padding: 5px 13px 13px 13px;
-    background-color: #e5e5e5;
-    position: absolute;
-    width:25%;
-    right:0;
-    top:-30px;
-    text-align: center;
 
-}
-.Challenge_me_articles_autor{
-    text-align: right;
-}
 .Challenge_me_other_articles{
     width: 45%;
     padding:25px;
     background-color: #e5e5e5;
     position: relative;
     margin-bottom: 50px;
+    border: 1px  solid #212121;
 }
 
 .flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: auto;
+   
+}
+.Challenge_me_other_test{
+    width: 45%;
+    display: flex;
+    flex-direction: space-between;
+    padding:25px;
+    margin-bottom: 50px;
+    border: 1px  solid #212121;
+
+}
+.Challenge_me_other_test_picture{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.Challenge_me_other_test_text{
+    display: flex;
+    align-items: center;
+
 }
