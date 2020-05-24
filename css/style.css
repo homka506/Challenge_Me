@@ -27,15 +27,12 @@ a:active{
     text-decoration: none; 
     color: #0073aa;
 }
-header {
-    padding: 2em 2em 2em 0;
-    font-size: 25px;
-}
+
 p{
     padding: 5px;
 }
 
-.text {
+.chm-blog {
     width: auto;
     background-color: #ffffff;
     padding: 25px 15px;
@@ -43,7 +40,7 @@ p{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
 }
 
-.Challenge_me_code{
+.chm-blog__code{
     position: relative;
     background-color: #212121;
     display: flex;
@@ -54,47 +51,39 @@ p{
    
 }
 
-
-.Challenge_me_sourse{
-    margin: 0 0 50px 0;
-}
-.Challenge_me_articles_title{
-    justify-content: center;
-    font-size: 125%;
-    margin-top: 10px;
-}
-
-.Challenge_me_other_articles{
-    width: 45%;
-    padding:25px;
-    background-color: #e5e5e5;
-    position: relative;
-    margin-bottom: 50px;
-    border: 1px  solid #212121;
-}
-
-.flex{
+.chm-blog__row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
    
 }
-.Challenge_me_other_test{
+
+.chm-blog__articles{
+    width: 45%;
+    padding:25px 25px 25px 10px;
+    background-color: #e5e5e5;
+    position: relative;
+    margin-bottom: 50px;
+    border: 1px  solid #212121;
+    
+}
+
+
+.chm-blog__test{
     width: 45%;
     display: flex;
-    flex-direction: space-between;
-    padding:25px;
+    padding:25px 25px 25px 10px;
     margin-bottom: 50px;
     border: 1px  solid #212121;
 
 }
-.Challenge_me_other_test_picture{
+.chm-blog__test__picture{
     max-width: 100%;
     display: flex;
     align-items: center;
 
 }
-.Challenge_me_other_test_text{
+.chm-blog__test__text{
     display: flex;
     align-items: center;
 

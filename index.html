@@ -10,15 +10,17 @@
 <body>
     <main>
 
-        <div class="text">
+        <div class="chm-blog">
+            <div class="chm-blog__body">
+                <div class="chm-blog__title">
         <h1>Как удалить большой файл из истории коммитов?</h1>
-        <div class= "Challenge_me">
-            <p class="first_paragraph">
+    </div>
+            <p>
                 Иногда, в процессе работы в коммит может ошибочно попасть большой файл. Это значительно увеличивает вес коммита и сказывается на производительности системы. Для решения подобных проблем была создана команда filter-branch - она позволяет редактировать большое количество коммитов одной командой, например: удалять  ненужные файлы из истории. 
 
                 Для удаления файла  из истории  (всех коммитов от первого и до крайнего) необходимо выполнить команду:
             </p>        
-                <div  class="Challenge_me_code">
+                <div  class="chm-blog__code">
                     
     <pre>
     <code>
@@ -29,7 +31,8 @@ git filter-branch --tree-filter 'rm -f file-name' HEAD
 <p>
     Опция <i>--tree-filter</i> запускает указанную команду (<i>rm -f file-name</i>) для каждого коммита в истории, после чего сохраняет результат выполнения. В этом случае команда <i>filter-branch</i> отредактирует каждый коммит, в котором "засветился" искомый файл (от коммита в котором был создан и до крайнего, на который указывает <i>.HEAD</i>).
     Если вы знаете коммит, в котором был создан не желаемый файл, вы можете ускорить процесс, указав <i>.Git</i> промежуток истории нуждающийся в редактировании. Для этого необходимо заменить опцию <i>HEAD</i> на <i>35dsa2..HEAD</i>, где <i>35dsa2</i> - коммит предшествующий тому, в котором был создан файл.   
-    <div  class="Challenge_me_code">
+    </p>
+    <div  class="chm-blog__code">
        
 <pre>
     <code>
@@ -41,9 +44,9 @@ git filter-branch --tree-filter 'rm -f file-name' 35dsa2..HEAD
     Однако, при использовании команды нужно помнить, что эти действия переписывают историю изменений. Каждый коммит, где был найден файл, будет переписан, поэтому необходимо сообщить всем, кто принимал участие в работе над проектом о необходимости перемещения их правок на новые коммиты.
 </p>
 
-
-         <div class="flex">
-                <div class="Challenge_me_other_articles">
+</div>
+         <div class="chm-blog__row">
+                <div class="chm-blog__articles">
                   
                     <ul>
                         <li>
@@ -56,11 +59,11 @@ git filter-branch --tree-filter 'rm -f file-name' 35dsa2..HEAD
                     </li>
                     </ul>
                 </div>
-                <div class="Challenge_me_other_test">
-                    <div class="Challenge_me_other_test_picture">
+                <div class="chm-blog__test">
+                    <div class="chm-blog__test__picture">
                         <img src="test.png" alt="test icon">
                 </div>
-                    <div class="Challenge_me_other_test_text" >
+                    <div class="chm-blog__test__text" >
                         <a href="http://chm.org.ua/">Проверь себя. Бесплатные тесты по HTML, CSS, JS и GIT
                         </a>
 
@@ -69,8 +72,6 @@ git filter-branch --tree-filter 'rm -f file-name' 35dsa2..HEAD
             </div>
         </div>
         </div>
-
-
     </main>
 </body>
 </html>
