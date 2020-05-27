@@ -1,90 +1,50 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-   html {
-    height: 100%;
-}
-
-html,
-body {
-    min-height: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1em; 
-    background-color: #cccccc;
-    padding:  0 30px;
-}
-
-a {
-    display: flex; 
-    color: #111; 
-}
-a:hover{
-    text-decoration: none; 
-}
-a:active{
-    text-decoration: none; 
-    color: #0073aa;
-}
-
-p{
-    padding: 5px;
-}
-
-.chm-blog {
-    width: auto;
-    background-color: #ffffff;
+.chmb-body {
     padding: 25px 15px;
-    text-align: justify;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
 }
 
-.chm-blog__code{
-    position: relative;
+.chmb-body__code-wrapper{
     background-color: #212121;
-    display: flex;
     padding:0 0 0 10px;
-    width: auto;
-    color: #ffff00;
-    border-left:5px solid #ffff00;
+    color: #ffd800;
+    border-left:5px solid #ffd800;
    
 }
 
-.chm-blog__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   
-}
-
-.chm-blog__articles{
-    width: 45%;
-    padding:25px 25px 25px 10px;
-    background-color: #e5e5e5;
-    position: relative;
-    margin-bottom: 50px;
+/* Quiz advertisement start */
+.chmb-quiz-ad-wrapper {
+    margin: auto;
+    width: 35%;
     border: 1px  solid #212121;
-    
+    border-radius: 25px;
 }
 
-
-.chm-blog__test{
-    width: 45%;
+.chmb-quiz-ad {
     display: flex;
-    padding:25px 25px 25px 10px;
-    margin-bottom: 50px;
-    border: 1px  solid #212121;
-
+    padding:25px;
+    color: #212121;
+    text-decoration: none;
 }
-.chm-blog__test__picture{
-    max-width: 100%;
+
+.chmb-quiz-ad:hover {
+    text-decoration: underline;
+}
+
+.chmb-quiz-ad__picture svg {
+    min-width: 105px;
+    width: 100%;
+    height: 100%;
+    color: #212121;
+}
+
+.chmb-quiz-ad__picture {
     display: flex;
+    justify-content: center;
     align-items: center;
-
+    flex-grow: 1;
 }
-.chm-blog__test__text{
-    display: flex;
-    align-items: center;
 
+.chmb-ad-meta {
+    padding: 0 0 0 25px;
+    flex-grow: 3;
 }
+/* Quiz advertisement end */
