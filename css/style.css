@@ -13,8 +13,9 @@
     display: flex;
     width: 15%;
     height: 100%;
-    background-color: #d1d1d1;
+    background-color: #e5e5e5;
     padding-top: 35px;
+  
   }
   
   .chm-nav li, ul{
@@ -36,18 +37,23 @@
 
   }
   .chm-nav a:hover {
-      background-color: #b7b7b7;
-      border-left:3px solid #ffd800;
+      background-color: #dbdbdb;
+      color:#ffffff;
   }
+  
+ 
   .chm-nav a:active {
-      color: #ffd800;
+      border-left:3px solid #ffd800;
       background-color: #111;
   
   }
-  .chm-nav img{
+  .chm-nav svg{
     margin-right: 10px;
+    
   }
-  
+  .chm-nav svg:hover{
+    fill:#ffffff;
+    }
 .chmb-body {
     padding: 25px 10px;
     max-width: 1400px;
