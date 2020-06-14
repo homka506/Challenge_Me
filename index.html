@@ -144,141 +144,148 @@
         </nav>
     </div>
     <div class="chm-mobilemenu">
-        <div class="chm-mobilemenu__hamburger">
-                <div class="top bar"></div>
-                <div class="middle bar"></div>
-                <div class="bottom bar"></div>
-        </div>
         <nav>
-            <div class="chm-mobilenav">
-            <ul>
-                <li class="chm-mobilenav-item">
+            
+            <input id="chm-mobilemenuToggle" type="checkbox">
+            <label for="chm-mobilemenuToggle">
+                <div class="chm-mobilemenu__title">
+                    <p class="site-title">ChallengeMe - 
+                         </p>
+                    <p class="site-description">место, где можно проверить свои навыки			
+                    </p>
+                    </div>
+                <span class="chm-mobilemenu__burger"></span>
+            
+            </label>
+           
+            <ul class="chm-mobilemenu__item">
+                <li>
                     <a class="chm-mobilenav-item__link" href="http://chm.org.ua/">
-                        Home</a>
+                        Home
+                    </a>
                 </li>
-                <li class="chm-mobilenav-item">
+                <li>
                     <a class="chm-mobilenav-item__link" href="http://chm.org.ua/">
                         Tests
                     </a>
                 </li>
-                <li class="chm-mobilenav-item">
+                <li>
                     <a class="chm-mobilenav-item__link" href="http://chm.org.ua/">
                         Blog
                     </a>
                 </li>
-                <li class="chm-mobilenav-item">
+                <li> 
                     <a class="chm-mobilenav-item__link" href="malto:">
-                        <?xml version="1.0" encoding="iso-8859-1"?>
-                        Contact</a>
+
+                        Contact
+                    </a>
                 </li>
             </ul>
-        </div>
         </nav>
     </div>
+        <div class="chmb-body">
+            <h1>Как удалить большой файл из истории коммитов?</h1>
+            <p>
+                Иногда, в процессе работы в коммит может ошибочно попасть большой файл. Это значительно увеличивает
+                вес коммита и сказывается на производительности системы. Для решения подобных проблем была создана
+                команда <i>filter-branch</i> - она позволяет редактировать большое количество коммитов одной командой,
+                например: удалять ненужные файлы из истории.
+            </p>
 
-    <div class="chmb-body">
-        <h1>Как удалить большой файл из истории коммитов?</h1>
-        <p>
-            Иногда, в процессе работы в коммит может ошибочно попасть большой файл. Это значительно увеличивает
-            вес коммита и сказывается на производительности системы. Для решения подобных проблем была создана
-            команда <i>filter-branch</i> - она позволяет редактировать большое количество коммитов одной командой,
-            например: удалять ненужные файлы из истории.
-        </p>
 
-
-        <div class="chmb-quiz-ad-wrapper">
-            <a class="chmb-quiz-ad" target="_blank" href="http://chm.org.ua/?utm_source=chm_blog">
-                <div class="chmb-quiz-ad__picture">
-                    <?xml version="1.0" ?><svg enable-background="new 0 0 64 64" height="64px" version="1.1"
-                        viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Layer_1">
-                            <g>
-                                <circle cx="32" cy="32" fill="#77B3D4" r="32" />
+            <div class="chmb-quiz-ad-wrapper">
+                <a class="chmb-quiz-ad" target="_blank" href="http://chm.org.ua/?utm_source=chm_blog">
+                    <div class="chmb-quiz-ad__picture">
+                        <?xml version="1.0" ?><svg enable-background="new 0 0 64 64" height="64px" version="1.1"
+                            viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Layer_1">
+                                <g>
+                                    <circle cx="32" cy="32" fill="#77B3D4" r="32" />
+                                </g>
+                                <g opacity="0.2">
+                                    <path
+                                        d="M48,14H16c-2.209,0-4,1.791-4,4v5.5V50c0,2.209,1.791,4,4,4h32c2.209,0,4-1.791,4-4V23.5V18    C52,15.791,50.209,14,48,14z"
+                                        fill="#231F20" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M48,12H16c-2.209,0-4,1.791-4,4v5.5V48c0,2.209,1.791,4,4,4h32c2.209,0,4-1.791,4-4V21.5V16    C52,13.791,50.209,12,48,12z"
+                                        fill="#E0995E" />
+                                </g>
+                                <g opacity="0.2">
+                                    <rect fill="#231F20" height="32" width="32" x="16" y="18" />
+                                </g>
+                                <g>
+                                    <rect fill="#FFFFFF" height="32" width="32" x="16" y="16" />
+                                </g>
+                                <g>
+                                    <rect fill="#E0E0D1" height="2" width="20" x="22" y="24" />
+                                </g>
+                                <g>
+                                    <rect fill="#E0E0D1" height="2" width="20" x="22" y="28" />
+                                </g>
+                                <g>
+                                    <rect fill="#E0E0D1" height="2" width="20" x="22" y="32" />
+                                </g>
+                                <g>
+                                    <rect fill="#E0E0D1" height="2" width="20" x="22" y="36" />
+                                </g>
+                                <g>
+                                    <rect fill="#E0E0D1" height="2" width="20" x="22" y="40" />
+                                </g>
+                                <g opacity="0.2">
+                                    <path d="M37,12H27h-3v3v1v1c0,1.657,1.343,3,3,3h10c1.657,0,3-1.343,3-3v-1v-1v-3H37z"
+                                        fill="#231F20" />
+                                </g>
+                                <g>
+                                    <path d="M37,10H27h-3v3v1v1c0,1.657,1.343,3,3,3h10c1.657,0,3-1.343,3-3v-1v-1v-3H37z"
+                                        fill="#4F5D73" />
+                                </g>
                             </g>
-                            <g opacity="0.2">
-                                <path
-                                    d="M48,14H16c-2.209,0-4,1.791-4,4v5.5V50c0,2.209,1.791,4,4,4h32c2.209,0,4-1.791,4-4V23.5V18    C52,15.791,50.209,14,48,14z"
-                                    fill="#231F20" />
-                            </g>
-                            <g>
-                                <path
-                                    d="M48,12H16c-2.209,0-4,1.791-4,4v5.5V48c0,2.209,1.791,4,4,4h32c2.209,0,4-1.791,4-4V21.5V16    C52,13.791,50.209,12,48,12z"
-                                    fill="#E0995E" />
-                            </g>
-                            <g opacity="0.2">
-                                <rect fill="#231F20" height="32" width="32" x="16" y="18" />
-                            </g>
-                            <g>
-                                <rect fill="#FFFFFF" height="32" width="32" x="16" y="16" />
-                            </g>
-                            <g>
-                                <rect fill="#E0E0D1" height="2" width="20" x="22" y="24" />
-                            </g>
-                            <g>
-                                <rect fill="#E0E0D1" height="2" width="20" x="22" y="28" />
-                            </g>
-                            <g>
-                                <rect fill="#E0E0D1" height="2" width="20" x="22" y="32" />
-                            </g>
-                            <g>
-                                <rect fill="#E0E0D1" height="2" width="20" x="22" y="36" />
-                            </g>
-                            <g>
-                                <rect fill="#E0E0D1" height="2" width="20" x="22" y="40" />
-                            </g>
-                            <g opacity="0.2">
-                                <path d="M37,12H27h-3v3v1v1c0,1.657,1.343,3,3,3h10c1.657,0,3-1.343,3-3v-1v-1v-3H37z"
-                                    fill="#231F20" />
-                            </g>
-                            <g>
-                                <path d="M37,10H27h-3v3v1v1c0,1.657,1.343,3,3,3h10c1.657,0,3-1.343,3-3v-1v-1v-3H37z"
-                                    fill="#4F5D73" />
-                            </g>
-                        </g>
-                        <g id="Layer_2" />
-                    </svg>
-                </div>
-                <div class="chmb-ad-meta">
-                    <h3 class="chmb-ad-meta__title">
-                        Проверь себя
-                    </h3>
-                    <div class="chmb-ad-meta__subtitle">
-                        Бесплатные тесты по HTML, CSS, JS и GIT
+                            <g id="Layer_2" />
+                        </svg>
                     </div>
-                </div>
-            </a>
-        </div>
-        <p>
-            Для удаления файла из истории (всех коммитов от первого и до крайнего) необходимо выполнить команду:
-        </p>
+                    <div class="chmb-ad-meta">
+                        <h3 class="chmb-ad-meta__title">
+                            Проверь себя
+                        </h3>
+                        <div class="chmb-ad-meta__subtitle">
+                            Бесплатные тесты по HTML, CSS, JS и GIT
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <p>
+                Для удаления файла из истории (всех коммитов от первого и до крайнего) необходимо выполнить команду:
+            </p>
 
-        <pre class="chmb-body__code-wrapper"><code>
+            <pre class="chmb-body__code-wrapper"><code>
         git filter-branch --tree-filter 'rm -f file-name' HEAD
         </code></pre>
 
-        <p>
-            Опция <i>--tree-filter</i> запускает указанную команду (<i>rm -f file-name</i>) для каждого коммита
-            в истории, после чего сохраняет результат выполнения. В этом случае команда <i>filter-branch</i>
-            отредактирует каждый коммит, в котором "засветился" (от коммита в котором был создан и
-            до крайнего, на который указывает <i>.HEAD</i>) искомый файл .
-            Если вы знаете коммит, в котором был создан не желаемый файл, вы можете ускорить процесс, указав
-            .Git промежуток истории нуждающийся в редактировании. Для этого необходимо заменить опцию
-            <i>HEAD</i> на <i>35dsa2..HEAD</i>, где <i>35dsa2</i> - коммит предшествующий тому, в котором был
-            создан файл.
-        </p>
+            <p>
+                Опция <i>--tree-filter</i> запускает указанную команду (<i>rm -f file-name</i>) для каждого коммита
+                в истории, после чего сохраняет результат выполнения. В этом случае команда <i>filter-branch</i>
+                отредактирует каждый коммит, в котором "засветился" (от коммита в котором был создан и
+                до крайнего, на который указывает <i>.HEAD</i>) искомый файл .
+                Если вы знаете коммит, в котором был создан не желаемый файл, вы можете ускорить процесс, указав
+                .Git промежуток истории нуждающийся в редактировании. Для этого необходимо заменить опцию
+                <i>HEAD</i> на <i>35dsa2..HEAD</i>, где <i>35dsa2</i> - коммит предшествующий тому, в котором был
+                создан файл.
+            </p>
 
-        <pre class="chmb-body__code-wrapper"><code>
+            <pre class="chmb-body__code-wrapper"><code>
         git filter-branch --tree-filter 'rm -f file-name' 35dsa2..HEAD
         </code></pre>
 
-        <p>
-            Однако, при использовании команды нужно помнить, что эти действия переписывают историю изменений.
-            Каждый коммит, где был найден файл, будет переписан, поэтому необходимо сообщить всем, кто принимал
-            участие в работе над проектом о необходимости перемещения их правок на новые коммиты.
-        </p>
+            <p>
+                Однако, при использовании команды нужно помнить, что эти действия переписывают историю изменений.
+                Каждый коммит, где был найден файл, будет переписан, поэтому необходимо сообщить всем, кто принимал
+                участие в работе над проектом о необходимости перемещения их правок на новые коммиты.
+            </p>
 
-    </div>
+        </div>
 </body>
 
 </html>

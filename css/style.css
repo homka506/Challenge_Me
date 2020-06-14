@@ -29,6 +29,7 @@ body{
     justify-content:start;
     width: 100%;
     padding-inline-start:0;
+    list-style: none;
   }
 
   
@@ -65,114 +66,129 @@ body{
         display:none;
     }
 }
-.chm-mobilemenu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 20;
-}
-.chm-mobilemenu__hamburger{
-    position:absolute;
-    top:0;
-    right:0;
-    width:80px;
-	height:80px;
-	margin: 0 auto;
+.chm-mobilemenu {
+  background-color: #e5e5e5;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  
 }
 
-.chm-mobilemenu__hamburger:hover .middle {
-	width:50px;
-	height:50px;
-	top:24%;
-	left:27%;
-	border-radius: 50%;
-  background-color:white;
-  opacity:0.3;
+
+.chm-mobilemenu__item {
+  background-color: #e5e5e5;
+  max-height: 0;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+ul{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+#chm-mobilemenuToggle {
+  display: none;
+  
 }
 
-.chm-mobilemenu__hamburger:hover .top {
-	transform:rotate(45deg);
+#chm-mobilemenuToggle:checked ~ .chm-mobilemenu__item {
+  max-height: 500px;
+  transition: top 1s ease-in;
+}
+
+.chm-mobilemenu__item li{
+  list-style: none;
+  align-items: center;
+}
+.chm-mobilenav-item__link{
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+    color: #111;
+    padding: 10px 0 10px 5px; 
+}
+.chm-mobilenav-item__link:hover{
+  background-color: #dbdbdb;
+  color:#ffffff;
+}
+.chm-mobilemenu__title{
+  width:80%;
+  align-items: center;
+}
+.chm-mobilemenu__burger {
+  
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  position: relative;;
   top:40%;
-  border-radius:10px;
-  background-color:black;
+  right:0;
+  
 }
 
-.chm-mobilemenu__hamburger:hover .bottom{
-	transform:rotate(-45deg);
-  top:40%;
-  border-radius:10px;
-  background-color:black;
-}
-
-.bar {
-	width:60px;
-	height:10px;
-	border:2px solid black;
-	position: absolute;
-  border-radius:10px;
-}
-
-.top {
-	left:15%;
-	top:20%;
-	transition:all 0.5s;
-}
-
-.middle {
-	left:15%;
-	top:40%;
-	transition:all 0.5s;
-}
-
-.bottom {
-	left:15%;
-	top:60%;
-	transition:all 0.5s;
-}
-.chm-mobilemenu__hamburger:hover nav{
+.chm-mobilemenu__burger:before {
+  content: "";
   display: block;
- }
-.chm-mobilenav{
-width:100%;
-height: 100%;
-background-color: #e5e5e5;
-padding-top: 35px;
-display: none;
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  position: absolute;
+  top: -8px;
+  transition: transform .5s linear;
 }
 
-  .chm-mobilenav ul, li{
-    margin-top: 20px;
-    width: 100%;
-    padding-inline-start:0;
-  }
-  .chm-mobilenav li:first-child{
-    margin-top: 50px;
-  }
-  
-  .chm-mobilenav-item__link{
-      font-size: 18px;
-    text-decoration: none;
-    justify-content:center;
-    display: flex;
-      color: #111;
-      padding: 10px 0 10px 5px; 
+.chm-mobilemenu__burger:after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: -8px;
+  transition: transform .5s linear;
+}
 
-  }
-  .chm-mobilenav-item:hover .chm-mobilenav-item__link{
-      background-color: #dbdbdb;
-      color:#ffffff;
-  }
- 
-.chm-mobilenav-item:active .chm-mobilenav-item__link {
-      border:2px solid #e5e5e5;
-      background-color: #b4b4b4;
-  
-  }
-  .chm-mobilenav svg{
-    margin-right: 10px;
-  }
+#chm-mobilemenuToggle:checked + label .chm-mobilemenu__burger {
+  visibility: hidden;
+}
+
+#chm-mobilemenuToggle:checked + label .chm-mobilemenu__burger:before {
+  transform: rotate(40deg);
+  top: 0;
+  visibility: visible;
+  transition: transform .5s linear;
+}
+
+#chm-mobilemenuToggle:checked + label .chm-mobilemenu__burger:after {
+  transform: rotate(-40deg);
+  bottom: 0;
+  visibility: visible;
+  transition: transform .5s linear;
+}
+
+.chm-mobilemenu nav {
+  position: relative;
+  z-index: 20;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 0 12px 0;
+
+}
+
+
 .chmb-body {
     padding: 25px 10px;
     max-width: 1400px;
